@@ -8,7 +8,7 @@ import numpy as np
 # 1. Load dataset
 # =====================
 # Use the path where your train.csv was extracted
-train_data = pd.read_csv("C:/Users/HOME/OneDrive/Desktop/ML internship/train.csv")
+train_data = pd.read_csv("C:/Users/HOME/OneDrive/Desktop/ML/train.csv")
 
 # =====================
 # 2. Select features and target
@@ -62,3 +62,4 @@ user_house = pd.DataFrame([[sqft, bedrooms, baths]], columns=features)
 # Predict price
 predicted_price = model.predict(user_house)[0]
 print(f"\nPredicted House Price: ${predicted_price:,.2f}")
+
